@@ -1,22 +1,43 @@
 {
-    "version": "2023.12.12",
+    "version": "2026.07.29",
     "description": "C/C++ dependency manager from Microsoft For all platforms, buildsystems, and workflows",
     "homepage": "https://vcpkg.io/",
     "license": "MIT",
-    "url": "https://github.com/microsoft/vcpkg/archive/refs/tags/2023.12.12.zip",
-    "hash": "5018bbbd75cb88c586b0b6abb524ee8cdef51d97f4601a43285630444b5dda97",
-    "extract_dir": "vcpkg-2023.12.12",
+    "suggest": {
+        "Git": "git"
+    },
+    "url": "https://github.com/microsoft/vcpkg/archive/refs/tags/2026.07.29.zip",
+    "hash": "657f91fe1e80a744a0578983cf3b9660514eb280f8fbc736e2dce0a860a53283",
+    "extract_dir": "vcpkg-2026.07.29",
+    "pre_install": [
+        "if (Get-Command \"git.exe\" -ErrorAction SilentlyContinue) {",
+        "    if (!(Test-Path \"$persist_dir\")) {",
+        "        New-Item -ItemType Directory -Path \"$persist_dir\" | Out-Null",
+        "    }",
+        "    if (!(Test-Path \"$persist_dir\\.git\")) {",
+        "        git -C \"$dir\" init --quiet --separate-git-dir \"$persist_dir\\.git\"",
+        "        git -C \"$dir\" remote add -t master origin https://github.com/microsoft/vcpkg",
+        "    } else {",
+        "        Write-Output \"gitdir: $persist_dir\\.git\" | Out-File -FilePath \"$dir\\.git\"",
+        "    }",
+        "    git -C \"$dir\" fetch --quiet --tags",
+        "    git -C \"$dir\" reset --quiet --hard $version",
+        "} else {",
+        "    Write-Host -F Yellow \"Git was not detected in PATH, skipping repository setup.\"",
+        "}"
+    ],
     "installer": {
         "file": "bootstrap-vcpkg.bat",
+        "args": "-disableMetrics",
         "keep": true
-    },
-    "bin": "vcpkg.exe",
-    "env_set": {
-        "VCPKG_ROOT": "$dir"
     },
     "post_install": "vcpkg integrate install",
     "uninstaller": {
         "script": "vcpkg integrate remove"
+    },
+    "bin": "vcpkg.exe",
+    "env_set": {
+        "VCPKG_ROOT": "$dir"
     },
     "persist": [
         "buildtrees",

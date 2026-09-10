@@ -1,16 +1,16 @@
 {
-    "version": "0.8.0",
+    "version": "0.9.2",
     "description": "A cli tool to proxy and analyze TCP connections.",
     "homepage": "https://github.com/kevwan/tproxy",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/kevwan/tproxy/releases/download/v0.8.0/tproxy-v0.8.0-windows-amd64.zip",
-            "hash": "md5:74e994e0e65dc9481473fb80ad18a8c5"
+            "url": "https://github.com/kevwan/tproxy/releases/download/v0.9.2/tproxy-v0.9.2-windows-amd64.zip",
+            "hash": "md5:67cb78c5de0f7418b0cef5cdb95c2935"
         },
         "arm64": {
-            "url": "https://github.com/kevwan/tproxy/releases/download/v0.8.0/tproxy-v0.8.0-windows-arm64.zip",
-            "hash": "md5:621b60d00d444c81235f78387a6e7047"
+            "url": "https://github.com/kevwan/tproxy/releases/download/v0.9.2/tproxy-v0.9.2-windows-arm64.zip",
+            "hash": "md5:28b76a1fb2a386da0a35432e112005f1"
         }
     },
     "bin": "tproxy.exe",

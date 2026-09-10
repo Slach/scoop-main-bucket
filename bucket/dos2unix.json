@@ -1,16 +1,19 @@
 {
-    "version": "7.5.1",
-    "description": "Convert text files with DOS or Mac line endings to Unix line endings and vice versa",
-    "homepage": "https://waterlan.home.xs4all.nl/dos2unix.html",
-    "license": "BSD-2-Clause",
+    "version": "7.5.7",
+    "description": "Convert text files with DOS or Mac line breaks to Unix line breaks and vice versa.",
+    "homepage": "https://waterlander.net/dos2unix/",
+    "license": {
+        "identifier": "BSD-2-Clause",
+        "url": "https://waterlander.net/dos2unix/doc/COPYING.txt"
+    },
     "architecture": {
-        "64bit": {
-            "url": "https://waterlan.home.xs4all.nl/dos2unix/dos2unix-7.5.1-win64.zip",
-            "hash": "bd119215219ae74bc396683f6019931c18610112824685ba5d4865bfe1b6d24b"
-        },
         "32bit": {
-            "url": "https://waterlan.home.xs4all.nl/dos2unix/dos2unix-7.5.1-win32.zip",
-            "hash": "462a4b6fb1f235913477f2d6c75368182de1da3b7e96ff2918e1cadfdee490ce"
+            "url": "https://waterlander.net/dos2unix/files/dos2unix-7.5.7-win32.zip",
+            "hash": "85727cab006ed04b6c2888032c75bbea3a2a9335af95f77bc27aa3cd538afe64"
+        },
+        "64bit": {
+            "url": "https://waterlander.net/dos2unix/files/dos2unix-7.5.7-win64.zip",
+            "hash": "8c1af6e366e641a859a1d58457663aedd1f3b4aae37e67621449beef145cf934"
         }
     },
     "bin": [
@@ -22,11 +25,11 @@
     "checkver": "Stable version:\\s+([\\d.]+)",
     "autoupdate": {
         "architecture": {
-            "64bit": {
-                "url": "https://waterlan.home.xs4all.nl/dos2unix/dos2unix-$version-win64.zip"
-            },
             "32bit": {
-                "url": "https://waterlan.home.xs4all.nl/dos2unix/dos2unix-$version-win32.zip"
+                "url": "https://waterlander.net/dos2unix/files/dos2unix-$version-win32.zip"
+            },
+            "64bit": {
+                "url": "https://waterlander.net/dos2unix/files/dos2unix-$version-win64.zip"
             }
         }
     }

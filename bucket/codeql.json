@@ -1,5 +1,5 @@
 {
-    "version": "2.15.5",
+    "version": "2.27.0",
     "description": "Source code security analyzer from GitHub",
     "homepage": "https://github.com/github/codeql-cli-binaries",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/github/codeql-cli-binaries/releases/download/v2.15.5/codeql-win64.zip",
-            "hash": "89b140047173a762b1090b18652608b637883f0a2dfcd718f5f34d618bc1be1f",
+            "url": "https://github.com/github/codeql-cli-binaries/releases/download/v2.27.0/codeql-win64.zip",
+            "hash": "0320fd9070c3582b09805d9ac82211816a580edec695c5b2baf52fcc51d658d5",
             "extract_dir": "codeql"
         }
     },

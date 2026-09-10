@@ -1,16 +1,16 @@
 {
-    "version": "0.13.1308",
+    "version": "1.19.0",
     "description": "A command line tool to switch between different versions of terraform",
     "homepage": "https://tfswitch.warrensbox.com",
     "license": "MIT",
     "architecture": {
         "32bit": {
-            "url": "https://github.com/warrensbox/terraform-switcher/releases/download/0.13.1308/terraform-switcher_0.13.1308_windows_386.zip",
-            "hash": "0fb7c7a5b58a6982b3216a0d1a1769577a2232fa3df5c795692c29b71e592bd6"
+            "url": "https://github.com/warrensbox/terraform-switcher/releases/download/v1.19.0/terraform-switcher_v1.19.0_windows_386.zip",
+            "hash": "996d325a4c8c3656a5336246066527a6d7ae1969688eaddd649b381e4d8276c1"
         },
         "64bit": {
-            "url": "https://github.com/warrensbox/terraform-switcher/releases/download/0.13.1308/terraform-switcher_0.13.1308_windows_amd64.zip",
-            "hash": "2c20cafbd6be81f6ed675522bbf05abd5e4b763ccefbd6bdd33e15a4604beb82"
+            "url": "https://github.com/warrensbox/terraform-switcher/releases/download/v1.19.0/terraform-switcher_v1.19.0_windows_amd64.zip",
+            "hash": "0ca9ba439a904ae666399f4da4bdcb01c6443aa760c1c013b02a66a7ca904402"
         }
     },
     "bin": "tfswitch.exe",
@@ -20,10 +20,10 @@
     "autoupdate": {
         "architecture": {
             "32bit": {
-                "url": "https://github.com/warrensbox/terraform-switcher/releases/download/$version/terraform-switcher_$version_windows_386.zip"
+                "url": "https://github.com/warrensbox/terraform-switcher/releases/download/v$version/terraform-switcher_v$version_windows_386.zip"
             },
             "64bit": {
-                "url": "https://github.com/warrensbox/terraform-switcher/releases/download/$version/terraform-switcher_$version_windows_amd64.zip"
+                "url": "https://github.com/warrensbox/terraform-switcher/releases/download/v$version/terraform-switcher_v$version_windows_amd64.zip"
             }
         }
     }

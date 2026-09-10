@@ -1,20 +1,32 @@
 {
-    "version": "0.0.23",
-    "description": "Rust implementation of GNU coreutils (binaries compiled with MSVC)",
-    "homepage": "https://github.com/uutils/coreutils",
-    "license": "MIT",
+    "version": "0.11.0",
+    "description": "A cross-platform Rust reimplementation of GNU coreutils (binaries compiled with MSVC), with some options or behaviors potentially differing from GNU coreutils.",
+    "homepage": "https://uutils.github.io/coreutils/",
+    "license": {
+        "identifier": "MIT",
+        "url": "https://github.com/uutils/coreutils/blob/HEAD/LICENSE"
+    },
+    "suggest": {
+        "vcredist": "extras/vcredist2022"
+    },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/uutils/coreutils/releases/download/0.0.23/coreutils-0.0.23-x86_64-pc-windows-msvc.zip",
-            "hash": "6a09488f926f1462e6d80070473580b194534c3dd7e38e15dc6c4733da46252e",
-            "extract_dir": "coreutils-0.0.23-x86_64-pc-windows-msvc"
+            "url": "https://github.com/uutils/coreutils/releases/download/0.11.0/coreutils-0.11.0-x86_64-pc-windows-msvc.zip",
+            "hash": "622e4a764332edbe8b4f6d9500938e649857a20a9a7f7d4fea0487d479eb9b9e",
+            "extract_dir": "coreutils-0.11.0-x86_64-pc-windows-msvc"
         },
         "32bit": {
-            "url": "https://github.com/uutils/coreutils/releases/download/0.0.23/coreutils-0.0.23-i686-pc-windows-msvc.zip",
-            "hash": "81a05cd58bbb7301b6f331af0416173424533c97665671c2951124512a2145a8",
-            "extract_dir": "coreutils-0.0.23-i686-pc-windows-msvc"
+            "url": "https://github.com/uutils/coreutils/releases/download/0.11.0/coreutils-0.11.0-i686-pc-windows-msvc.zip",
+            "hash": "3aa0d2dc2aed0d487424b16239ecd12624c0c73aecbfbe9f3a9fe040bbb9277f",
+            "extract_dir": "coreutils-0.11.0-i686-pc-windows-msvc"
+        },
+        "arm64": {
+            "url": "https://github.com/uutils/coreutils/releases/download/0.11.0/coreutils-0.11.0-aarch64-pc-windows-msvc.zip",
+            "hash": "6441a8326c8c210acffa23231b5b61c65a0f3bfe4d9ec45009c21cba6689ab31",
+            "extract_dir": "coreutils-0.11.0-aarch64-pc-windows-msvc"
         }
     },
+    "pre_install": "Get-ChildItem -LiteralPath $dir -Filter '*.exe' -File | Where-Object Name -ne 'coreutils.exe' | Remove-Item",
     "bin": [
         "coreutils.exe",
         [
@@ -22,7 +34,9 @@
             "uutils"
         ]
     ],
-    "checkver": "github",
+    "checkver": {
+        "github": "https://github.com/uutils/coreutils"
+    },
     "autoupdate": {
         "architecture": {
             "64bit": {
@@ -32,6 +46,10 @@
             "32bit": {
                 "url": "https://github.com/uutils/coreutils/releases/download/$version/coreutils-$version-i686-pc-windows-msvc.zip",
                 "extract_dir": "coreutils-$version-i686-pc-windows-msvc"
+            },
+            "arm64": {
+                "url": "https://github.com/uutils/coreutils/releases/download/$version/coreutils-$version-aarch64-pc-windows-msvc.zip",
+                "extract_dir": "coreutils-$version-aarch64-pc-windows-msvc"
             }
         }
     }

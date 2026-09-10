@@ -1,12 +1,12 @@
 {
-    "version": "2.15.4",
+    "version": "2.36.42",
     "description": "Unified tool to manage AWS services",
     "homepage": "https://aws.amazon.com/cli/",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://awscli.amazonaws.com/AWSCLIV2-2.15.4.msi",
-            "hash": "83d45e3b313cb1760928b2963edb4b62e7e0689f858d4c1914a58aef34d2d5aa"
+            "url": "https://awscli.amazonaws.com/AWSCLIV2-2.36.42.msi",
+            "hash": "fff61948535020dbe221632c9ceb7f4c1aaf5d4e42da1aa5d2f214c1ad23ad82"
         }
     },
     "extract_dir": "Amazon\\AWSCLIV2",
@@ -15,7 +15,7 @@
         "aws_completer.exe"
     ],
     "checkver": {
-        "url": "https://api.github.com/repositories/6780767/tags",
+        "github": "https://api.github.com/repos/aws/aws-cli/tags",
         "jsonpath": "$[0].name"
     },
     "autoupdate": {

@@ -1,20 +1,20 @@
 {
-    "version": "0.1.9",
-    "description": "An extremely fast Python linter, written in Rust",
+    "version": "0.16.6",
+    "description": "An extremely fast Python linter and code formatter, written in Rust.",
     "homepage": "https://github.com/astral-sh/ruff",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/astral-sh/ruff/releases/download/v0.1.9/ruff-0.1.9-x86_64-pc-windows-msvc.zip",
-            "hash": "114e57029f966d2a20fc51d1028a349d2da42fb50fd2e1f431ce80c48d9f8d01"
+            "url": "https://github.com/astral-sh/ruff/releases/download/0.16.6/ruff-x86_64-pc-windows-msvc.zip",
+            "hash": "d968cbf82bcb42042a59e9478a48f9a00db88cceaa2eeaa86c4834c02a70eaf6"
         },
         "32bit": {
-            "url": "https://github.com/astral-sh/ruff/releases/download/v0.1.9/ruff-0.1.9-i686-pc-windows-msvc.zip",
-            "hash": "d41b9df084bd2ada170e9e37cb57d5ad94f29519df08715108fc06b88c2bab0a"
+            "url": "https://github.com/astral-sh/ruff/releases/download/0.16.6/ruff-i686-pc-windows-msvc.zip",
+            "hash": "8f05bd2ee05672ea1ecafe7b75d53dce0490ca6eefac32e5a5fac546026a6b24"
         },
         "arm64": {
-            "url": "https://github.com/astral-sh/ruff/releases/download/v0.1.9/ruff-0.1.9-aarch64-pc-windows-msvc.zip",
-            "hash": "f8fe75352383cfa777a652b5e43be8c858fd77e6e501954aea5f37761ab3295a"
+            "url": "https://github.com/astral-sh/ruff/releases/download/0.16.6/ruff-aarch64-pc-windows-msvc.zip",
+            "hash": "0a14f2a8de7e6a2bb43f47b329d639970462a8ca302b1c4c18668b5e3135462e"
         }
     },
     "bin": "ruff.exe",
@@ -22,13 +22,13 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/astral-sh/ruff/releases/download/v$version/ruff-$version-x86_64-pc-windows-msvc.zip"
+                "url": "https://github.com/astral-sh/ruff/releases/download/$version/ruff-x86_64-pc-windows-msvc.zip"
             },
             "32bit": {
-                "url": "https://github.com/astral-sh/ruff/releases/download/v$version/ruff-$version-i686-pc-windows-msvc.zip"
+                "url": "https://github.com/astral-sh/ruff/releases/download/$version/ruff-i686-pc-windows-msvc.zip"
             },
             "arm64": {
-                "url": "https://github.com/astral-sh/ruff/releases/download/v$version/ruff-$version-aarch64-pc-windows-msvc.zip"
+                "url": "https://github.com/astral-sh/ruff/releases/download/$version/ruff-aarch64-pc-windows-msvc.zip"
             }
         },
         "hash": {

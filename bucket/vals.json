@@ -1,16 +1,16 @@
 {
-    "version": "0.32.0",
+    "version": "0.46.0",
     "description": "Helm-like configuration values loader with support for various sources",
-    "homepage": "https://github.com/variantdev/vals",
+    "homepage": "https://github.com/helmfile/vals",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/variantdev/vals/releases/download/v0.32.0/vals_0.32.0_windows_amd64.tar.gz",
-            "hash": "3d886c946e4aefec49b413f182bd65bdea1a406cc2d5a80eecc5e20f11ed891d"
+            "url": "https://github.com/helmfile/vals/releases/download/v0.46.0/vals_0.46.0_windows_amd64.tar.gz",
+            "hash": "580c509a585b5c4087c076e8ea0e1a12567273673d596809e032110ea6f5a12d"
         },
         "32bit": {
-            "url": "https://github.com/variantdev/vals/releases/download/v0.32.0/vals_0.32.0_windows_386.tar.gz",
-            "hash": "cd6730b3b761a4be605bf0effad22dd42ae289ab9043213a2187f8df7de1f0e2"
+            "url": "https://github.com/helmfile/vals/releases/download/v0.46.0/vals_0.46.0_windows_386.tar.gz",
+            "hash": "5c223f6ae704521233f05f02bf5094062af6465a0c213eb391c8f83ac42b5f59"
         }
     },
     "bin": "vals.exe",
@@ -18,10 +18,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/variantdev/vals/releases/download/v$version/vals_$version_windows_amd64.tar.gz"
+                "url": "https://github.com/helmfile/vals/releases/download/v$version/vals_$version_windows_amd64.tar.gz"
             },
             "32bit": {
-                "url": "https://github.com/variantdev/vals/releases/download/v$version/vals_$version_windows_386.tar.gz"
+                "url": "https://github.com/helmfile/vals/releases/download/v$version/vals_$version_windows_386.tar.gz"
             }
         }
     }

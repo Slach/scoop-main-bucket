@@ -1,18 +1,18 @@
 {
-    "version": "2.1.1700008891-1",
+    "version": "2.1.1788460057-2",
     "description": "Just-In-Time Compiler (JIT) for the Lua programming language.",
     "homepage": "https://luajit.org/luajit.html",
     "license": "MIT",
     "architecture": {
-        "64bit": {
-            "url": "https://mirror.msys2.org/mingw/mingw64/mingw-w64-x86_64-luajit-2.1.1700008891-1-any.pkg.tar.zst",
-            "hash": "6f5db5827ad258c0422c3448b937c2f628d80c998e13ed32f93d3df730ab705c",
-            "extract_dir": "mingw64"
+        "arm64": {
+            "url": "https://mirror.msys2.org/mingw/clangarm64/mingw-w64-clang-aarch64-luajit-2.1.1788460057-2-any.pkg.tar.zst",
+            "hash": "7d5a2dfe6ca4f95524053e24776f345101117b5b2801dee1e50fddd3de036a7c",
+            "extract_dir": "clangarm64"
         },
-        "32bit": {
-            "url": "https://mirror.msys2.org/mingw/mingw32/mingw-w64-i686-luajit-2.1.1700008891-1-any.pkg.tar.zst",
-            "hash": "d4854e59048dc62e58f3aeb335bd46197466012a3551af72f92ec125a34a2179",
-            "extract_dir": "mingw32"
+        "64bit": {
+            "url": "https://mirror.msys2.org/mingw/mingw64/mingw-w64-x86_64-luajit-2.1.1788460057-2-any.pkg.tar.zst",
+            "hash": "f060ca86fa5587a8f52b67bc341f115f141ddf64c69bc4606a54351f47d6adbf",
+            "extract_dir": "mingw64"
         }
     },
     "bin": "bin\\luajit.exe",
@@ -22,11 +22,11 @@
     },
     "autoupdate": {
         "architecture": {
+            "arm64": {
+                "url": "https://mirror.msys2.org/mingw/clangarm64/mingw-w64-clang-aarch64-luajit-$version-any.pkg.tar.zst"
+            },
             "64bit": {
                 "url": "https://mirror.msys2.org/mingw/mingw64/mingw-w64-x86_64-luajit-$version-any.pkg.tar.zst"
-            },
-            "32bit": {
-                "url": "https://mirror.msys2.org/mingw/mingw32/mingw-w64-i686-luajit-$version-any.pkg.tar.zst"
             }
         }
     }

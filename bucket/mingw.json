@@ -1,25 +1,26 @@
 {
-    "version": "13.2.0-rt_v11-rev0",
+    "version": "16.2.0-rt_v14-rev1",
     "description": "Minimalistic GNU for Windows is a runtime environment for GCC, GDB, make and related binutils.",
     "homepage": "https://www.mingw-w64.org",
     "license": "ZPL-2.1",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/niXman/mingw-builds-binaries/releases/download/13.2.0-rt_v11-rev0/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev0.7z",
-            "hash": "a05578fab9068c678ce761e7b2e284d23fa7416a2f4f36349e05e506c944e2c7",
+            "url": "https://github.com/niXman/mingw-builds-binaries/releases/download/16.2.0-rt_v14-rev1/x86_64-16.2.0-release-posix-seh-ucrt-rt_v14-rev1.7z",
+            "hash": "26788998d615856a915e1eeacb0854fce87bc608fa9a0c16f96bcbfdcf3415c0",
             "extract_dir": "mingw64"
         },
         "32bit": {
-            "url": "https://github.com/niXman/mingw-builds-binaries/releases/download/13.2.0-rt_v11-rev0/i686-13.2.0-release-posix-dwarf-ucrt-rt_v11-rev0.7z",
-            "hash": "d645afaf8d506570631c492a6a06220add1a953eaf83055cd2a69d1c1d25a5cd",
+            "url": "https://github.com/niXman/mingw-builds-binaries/releases/download/16.2.0-rt_v14-rev1/i686-16.2.0-release-posix-dwarf-ucrt-rt_v14-rev1.7z",
+            "hash": "f060413ae25d008797a50670b3a5c44055ab3e99af9bbe595135e29c71f9ac6a",
             "extract_dir": "mingw32"
         }
     },
     "post_install": "Copy-Item \"$dir\\bin\\mingw32-make.exe\" \"$dir\\bin\\make.exe\"",
     "env_add_path": "bin",
     "checkver": {
-        "github": "https://github.com/niXman/mingw-builds-binaries",
-        "regex": "tag/([\\d.]+)-(?<build>[a-z0-9_\\-]+)",
+        "github": "https://api.github.com/repos/niXman/mingw-builds-binaries/releases",
+        "jsonpath": "$[?(@.prerelease == false)].tag_name",
+        "regex": "([\\d.]+)-(?<build>[a-z0-9_\\-]+)",
         "replace": "${1}-${build}"
     },
     "autoupdate": {

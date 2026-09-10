@@ -1,16 +1,16 @@
 {
-    "version": "11.1.0.38060",
+    "version": "16.3.0.41101",
     "description": "PowerShell cmdlets for developers and administrators to develop, deploy and manage Microsoft Azure applications.",
     "homepage": "https://aka.ms/azpsdocs",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Azure/azure-powershell/releases/download/v11.1.0-December2023/Az-Cmdlets-11.1.0.38060-x64.msi",
-            "hash": "d29a609263602d53d5409cc6f7d92c726322f3b9ae7465386b9fbc8c1e616d59"
+            "url": "https://github.com/Azure/azure-powershell/releases/download/v16.3.0-September2026/Az-Cmdlets-16.3.0.41101-x64.msi",
+            "hash": "75caa9f26078600357528badf626186441dbe65f7b318faa7d10345663fb4c68"
         },
         "32bit": {
-            "url": "https://github.com/Azure/azure-powershell/releases/download/v11.1.0-December2023/Az-Cmdlets-11.1.0.38060-x86.msi",
-            "hash": "716e75487f5d68bc960dbb9342a0ea764dfd2bdb2eb4658a568390264d9bd45b"
+            "url": "https://github.com/Azure/azure-powershell/releases/download/v16.3.0-September2026/Az-Cmdlets-16.3.0.41101-x86.msi",
+            "hash": "90f0a8d26e4b25f4c71f0cbd75ebdc017a7ecaf7c3a67d62f10f2b3e1e855dd1"
         }
     },
     "extract_dir": "WindowsPowerShell\\Modules",
@@ -18,7 +18,8 @@
         "name": "AzureRM"
     },
     "checkver": {
-        "url": "https://api.github.com/repositories/23891194/releases",
+        "github": "https://api.github.com/repos/Azure/azure-powershell/releases",
+        "jsonpath": "$..browser_download_url",
         "regex": "download/v(?<release>[^/]+)/Az-Cmdlets-([0-9.]+)-x64[.]msi"
     },
     "autoupdate": {

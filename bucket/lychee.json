@@ -1,21 +1,29 @@
 {
-    "version": "0.13.0",
+    "version": "0.24.2",
     "description": "A command-line link checker",
     "homepage": "https://github.com/lycheeverse/lychee",
     "license": "Apache-2.0|MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/lycheeverse/lychee/releases/download/v0.13.0/lychee-v0.13.0-windows-x86_64.exe#/lychee.exe",
-            "hash": "ad5ad95539ada17fa9f5d6b9e031dc1e525476a40ce300278f330ac22708bd89"
+            "url": "https://github.com/lycheeverse/lychee/releases/download/lychee-v0.24.2/lychee-x86_64-pc-windows-msvc.zip",
+            "hash": "32975d1493ee1a975d6bb41e4fb56fe419cb442ded628bb772ba2e614acfacad",
+            "extract_dir": "lychee-x86_64-pc-windows-msvc"
         }
     },
     "bin": "lychee.exe",
-    "checkver": "github",
+    "checkver": {
+        "github": "https://github.com/lycheeverse/lychee",
+        "regex": "lychee-v([\\d.]+)"
+    },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/lycheeverse/lychee/releases/download/v$version/lychee-v$version-windows-x86_64.exe#/lychee.exe"
+                "url": "https://github.com/lycheeverse/lychee/releases/download/lychee-v$version/lychee-x86_64-pc-windows-msvc.zip"
             }
+        },
+        "hash": {
+            "url": "$url.sha256",
+            "regex": "$sha256"
         }
     }
 }

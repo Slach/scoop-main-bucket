@@ -1,13 +1,13 @@
 {
-    "version": "0.1.414",
+    "version": "0.1.422",
     "description": "Collection of tools for analyzing open source packages.",
     "homepage": "https://github.com/microsoft/OSSGadget",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/microsoft/OSSGadget/releases/download/v0.1.414/OSSGadget_win_0.1.414.zip",
-            "hash": "9684794e086e3df942343268d5620ed4e196b1e44af66b6121cc76a9f672f2ec",
-            "extract_dir": "OSSGadget_win_0.1.414"
+            "url": "https://github.com/microsoft/OSSGadget/releases/download/v0.1.422/OSSGadget_win_0.1.422.zip",
+            "hash": "7e2bbddbe60a4aff5b9f6ea918c0160c237763d48c1773459bec203a7643adf8",
+            "extract_dir": "OSSGadget_win_0.1.422"
         }
     },
     "bin": [

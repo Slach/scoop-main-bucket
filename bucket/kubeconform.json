@@ -1,20 +1,16 @@
 {
-    "version": "0.6.4",
+    "version": "0.8.0",
     "description": "A Kubernetes manifest validation tool. Incorporate it into your CI, or use it locally to validate your Kubernetes configuration!",
     "homepage": "https://github.com/yannh/kubeconform",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/yannh/kubeconform/releases/download/v0.6.4/kubeconform-windows-amd64.zip",
-            "hash": "1f6ad9eaab24d14363433897aee4b9049184b10ac3681de0d23105f3a114bf69"
-        },
-        "32bit": {
-            "url": "https://github.com/yannh/kubeconform/releases/download/v0.6.4/kubeconform-windows-386.zip",
-            "hash": "97b0d701e14a6b125c7c184fdb2e2c356d0b1148932571c39f09f9212c30d549"
+            "url": "https://github.com/yannh/kubeconform/releases/download/v0.8.0/kubeconform-windows-amd64.zip",
+            "hash": "e3f56102bcf4f50b034a567e2482a1c5330799983ddd655952310211aef73d93"
         },
         "arm64": {
-            "url": "https://github.com/yannh/kubeconform/releases/download/v0.6.4/kubeconform-windows-arm64.zip",
-            "hash": "491568dc4a17fccc735541a09cf767ad77742e17391d309232cac6a0d9832675"
+            "url": "https://github.com/yannh/kubeconform/releases/download/v0.8.0/kubeconform-windows-arm64.zip",
+            "hash": "4f3c9889f5f3a1e4aba84f9212f599ad3164d1fb32175fba3a53b505b0fffd0f"
         }
     },
     "bin": "kubeconform.exe",
@@ -23,9 +19,6 @@
         "architecture": {
             "64bit": {
                 "url": "https://github.com/yannh/kubeconform/releases/download/v$version/kubeconform-windows-amd64.zip"
-            },
-            "32bit": {
-                "url": "https://github.com/yannh/kubeconform/releases/download/v$version/kubeconform-windows-386.zip"
             },
             "arm64": {
                 "url": "https://github.com/yannh/kubeconform/releases/download/v$version/kubeconform-windows-arm64.zip"

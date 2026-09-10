@@ -1,14 +1,18 @@
 {
-    "version": "1.9.8",
+    "version": "2.0.8",
     "description": "A build tool for Scala, Java, and more",
     "homepage": "https://www.scala-sbt.org",
     "license": "BSD-3-Clause",
-    "url": "https://github.com/sbt/sbt/releases/download/v1.9.8/sbt-1.9.8.zip",
-    "hash": "380192b772a02004b0677a4125954ef672c1e9971683e12c1c866a191757a5b9",
+    "url": "https://github.com/sbt/sbt/releases/download/v2.0.8/sbt-2.0.8.zip",
+    "hash": "8cde344a0ea59bf3ac1df3c808bb82eabf44a93a2d7c817237f002dcca254e4b",
     "extract_dir": "sbt",
+    "env_set": {
+        "SBT_HOME": "$dir"
+    },
     "bin": "bin\\sbt.bat",
+    "persist": "conf",
     "checkver": {
-        "url": "https://www.scala-sbt.org/download.html",
+        "url": "https://www.scala-sbt.org/download/",
         "regex": "/sbt-([\\d.]+)\\.zip"
     },
     "autoupdate": {

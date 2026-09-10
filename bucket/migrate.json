@@ -1,16 +1,16 @@
 {
-    "version": "4.17.0",
+    "version": "4.20.1",
     "description": "Reads and applies migrations in correct order to a database.",
     "homepage": "https://github.com/golang-migrate/migrate",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/golang-migrate/migrate/releases/download/v4.17.0/migrate.windows-amd64.zip",
-            "hash": "147b2f9f1fd10167d78567038398496639d4b42aa83f7e3209854ed658c9b1fb"
+            "url": "https://github.com/golang-migrate/migrate/releases/download/v4.20.1/migrate.windows-amd64.zip",
+            "hash": "bf68e2fdd1c8efd3cac59c6cb4cddca51546c402e3fc616172329d7686875ce8"
         },
         "32bit": {
-            "url": "https://github.com/golang-migrate/migrate/releases/download/v4.17.0/migrate.windows-386.zip",
-            "hash": "3aa17a00ef1ac2472045a75a77748c63c8fa9a74241f25700877241a3bee5592"
+            "url": "https://github.com/golang-migrate/migrate/releases/download/v4.20.1/migrate.windows-386.zip",
+            "hash": "dbdd250326b9875fe35a928cc1444955e50703ed56b358278ff3705d444f382b"
         }
     },
     "bin": "migrate.exe",

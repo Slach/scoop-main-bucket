@@ -1,12 +1,12 @@
 {
-    "version": "1.53.6",
+    "version": "1.56.5",
     "homepage": "https://github.com/lay295/TwitchDownloader",
     "description": "A Twitch VOD/Clip/Chat Downloader and Chat Renderer. (CLI Version)",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/lay295/TwitchDownloader/releases/download/1.53.6/TwitchDownloaderCLI-1.53.6-Windows-x64.zip",
-            "hash": "8487acbc0c0ef30e61e1227ddf421b165f5501a4377c83c4aeed5c71aaf838ee"
+            "url": "https://github.com/lay295/TwitchDownloader/releases/download/1.56.5/TwitchDownloaderCLI-1.56.5-Windows-x64.zip",
+            "hash": "8b1b0695f2b1b6bf0d2535fab4b84032951cded8cf4078dfdf4d58e391c813a0"
         }
     },
     "bin": "TwitchDownloaderCLI.exe",

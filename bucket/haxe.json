@@ -1,5 +1,5 @@
 {
-    "version": "4.3.3",
+    "version": "4.3.7",
     "description": "High-level, cross-platform, multi-paradigm programming language and compiler",
     "homepage": "https://haxe.org",
     "license": {
@@ -9,12 +9,12 @@
     "depends": "neko",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/HaxeFoundation/haxe/releases/download/4.3.3/haxe-4.3.3-win64.zip",
-            "hash": "70953a966b90bceb664639d1a690567e39cf9e3ebacf8c622c17df76fa0a199b"
+            "url": "https://github.com/HaxeFoundation/haxe/releases/download/4.3.7/haxe-4.3.7-win64.zip",
+            "hash": "29f7acb0fb9fc66a2b9f6bd9453af3474ccb14ebd9fd0142f351d7311c4010c9"
         },
         "32bit": {
-            "url": "https://github.com/HaxeFoundation/haxe/releases/download/4.3.3/haxe-4.3.3-win.zip",
-            "hash": "4de9ecba4a54fd81243ca343ee1e3f306b9575217db3bf78d3232a80fe10dad5"
+            "url": "https://github.com/HaxeFoundation/haxe/releases/download/4.3.7/haxe-4.3.7-win.zip",
+            "hash": "e6c76c76f541f3786163f382b73273aebdc084341874cffc11ce40a6dac85af2"
         }
     },
     "pre_install": [

@@ -1,16 +1,16 @@
 {
-    "version": "3.34.0",
+    "version": "3.36.0",
     "description": "Utility for downloading TV and radio programmes from BBC iPlayer and BBC Sounds",
     "homepage": "https://github.com/get-iplayer/get_iplayer",
     "license": "GPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/get-iplayer/get_iplayer_win32/releases/download/3.34.0/get_iplayer-3.34.0-windows-x64-setup.exe",
-            "hash": "591bdd1073cc40249f4fd4e2a20d674b59f591ed0282f4a09318652bc7822768"
+            "url": "https://github.com/get-iplayer/get_iplayer_win32/releases/download/3.36.0/get_iplayer-3.36.0-windows-x64-setup.exe",
+            "hash": "1b34166ede43c9b54fae3d06b3f72a521e72caa06352ba20551324f7f56f03d1"
         },
         "32bit": {
-            "url": "https://github.com/get-iplayer/get_iplayer_win32/releases/download/3.34.0/get_iplayer-3.34.0-windows-x86-setup.exe",
-            "hash": "cfb7cd23d5e751198b505400b05992dd3bbad8e4c5d30f0cfb2586698b526e66"
+            "url": "https://github.com/get-iplayer/get_iplayer_win32/releases/download/3.36.0/get_iplayer-3.36.0-windows-x86-setup.exe",
+            "hash": "157dd5abcea5065e721dae66220aaa133ec826c2b6449f8ff1ed54c15f9ae882"
         }
     },
     "innosetup": true,

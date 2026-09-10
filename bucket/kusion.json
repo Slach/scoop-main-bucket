@@ -1,12 +1,12 @@
 {
-    "version": "0.9.1",
+    "version": "0.15.0",
     "description": "Platform Engineering Engine: Deliver intentions to Kubernetes and Clouds",
     "homepage": "https://kusionstack.io",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/KusionStack/kusion/releases/download/v0.9.1/kusion_0.9.1_windows_amd64.zip",
-            "hash": "52ff029a791da1e5169db45a1882b19c0578d6e235ec18482ee9696decfa5f90"
+            "url": "https://github.com/KusionStack/kusion/releases/download/v0.15.0/kusion_0.15.0_windows_amd64.zip",
+            "hash": "d125bee2bfb5b5e3a468135da058696d843aca70c8a2bfec12b9582c69dafb7d"
         }
     },
     "bin": "kusion.exe",

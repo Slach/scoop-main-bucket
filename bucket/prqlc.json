@@ -1,12 +1,12 @@
 {
-    "version": "0.11.0",
+    "version": "0.13.14",
     "description": "A simple, powerful, pipelined SQL replacement",
     "homepage": "https://prql-lang.org/",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/PRQL/prql/releases/download/0.11.0/prqlc-v0.11.0-x86_64-pc-windows-msvc.zip",
-            "hash": "5632b4d80f68efc1c8551a52352806f00ba143fbedad0d425480e52da294173c"
+            "url": "https://github.com/PRQL/prql/releases/download/0.13.14/prqlc-0.13.14-x86_64-pc-windows-msvc.zip",
+            "hash": "fa8cb13b3871842c65de5f4101e7371b03191f0ddcb7a9d0c0e5feceff9b3f3c"
         }
     },
     "bin": "prqlc.exe",
@@ -16,7 +16,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/PRQL/prql/releases/download/$version/prqlc-v$version-x86_64-pc-windows-msvc.zip"
+                "url": "https://github.com/PRQL/prql/releases/download/$version/prqlc-$version-x86_64-pc-windows-msvc.zip"
             }
         }
     }

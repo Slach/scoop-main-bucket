@@ -1,24 +1,25 @@
 {
-    "version": "1.9.4",
-    "description": "A programming language that is a fresh approach to technical computing.",
-    "homepage": "https://julialang.org",
+    "version": "1.12.7",
+    "description": "The Julia programming language",
+    "homepage": "https://julialang.org/",
     "license": "MIT",
+    "notes": "The `juliaup` tool supports installing and using different versions of Julia simultaneously.",
     "architecture": {
         "64bit": {
-            "url": "https://julialang-s3.julialang.org/bin/winnt/x64/1.9/julia-1.9.4-win64.zip",
-            "hash": "ab417f302f850843f24d9f44acd45f9eeafa0b4c8e5a40847af11f794ff2e370",
-            "extract_dir": "julia-1.9.4"
+            "url": "https://julialang-s3.julialang.org/bin/winnt/x64/1.12/julia-1.12.7-win64.zip",
+            "hash": "ff5c7eb354c2fcb48401114a5fbcfe8e60181f95d9af42b266f975265a5bad47",
+            "extract_dir": "julia-1.12.7"
         },
         "32bit": {
-            "url": "https://julialang-s3.julialang.org/bin/winnt/x86/1.9/julia-1.9.4-win32.zip",
-            "hash": "94d76e92b3851c17cfbefd0d92b2e85d23941be146256c1aa998fb19d43b3a11",
-            "extract_dir": "julia-1.9.4"
+            "url": "https://julialang-s3.julialang.org/bin/winnt/x86/1.12/julia-1.12.7-win32.zip",
+            "hash": "8629e616ad0c264c8b794bd70c25bdf6614e165d9fba5f91103ec5e3834c5003",
+            "extract_dir": "julia-1.12.7"
         }
     },
     "bin": "bin\\julia.exe",
     "checkver": {
-        "url": "https://julialang.org/downloads/",
-        "regex": "Current stable release: v([\\d.]+)"
+        "url": "https://github.com/JuliaLang/www.julialang.org/raw/main/config.md",
+        "regex": "(?m:^stable_release *= *\"([0-9.]+)\"$)"
     },
     "autoupdate": {
         "architecture": {

@@ -1,16 +1,16 @@
 {
-    "version": "0.4.23",
+    "version": "0.4.32",
     "description": "CLI search and replace | Space Age seD",
     "homepage": "https://github.com/ms-jpq/sad",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/ms-jpq/sad/releases/download/v0.4.23/x86_64-pc-windows-msvc.zip",
-            "hash": "564cf6104424ba6f6e829981e4b0c6c8ab19cf2352183a9c41634ecf05ac7993"
+            "url": "https://github.com/ms-jpq/sad/releases/download/v0.4.32/x86_64-pc-windows-msvc.zip",
+            "hash": "69d1545c64c93637e69d1bfbce62c78a8de11c1dd6bf947d4a281fb70bdd64ca"
         },
         "arm64": {
-            "url": "https://github.com/ms-jpq/sad/releases/download/v0.4.23/aarch64-pc-windows-msvc.zip",
-            "hash": "46c0383c28764fed54ef4ebc90104997bf074f7d892ffa0413749535a82cd576"
+            "url": "https://github.com/ms-jpq/sad/releases/download/v0.4.32/aarch64-pc-windows-msvc.zip",
+            "hash": "37290417cd469d8a4d601909685226573732e6a0a05173bcc41621772d43f377"
         }
     },
     "bin": "sad.exe",

@@ -1,15 +1,15 @@
 {
-    "version": "11.1",
+    "version": "17.1",
     "description": "GNU Debugger",
     "homepage": "https://www.gnu.org/software/gdb/",
     "license": "GPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://nuwen.net/files/mingw/components-18.0.7z",
-            "hash": "50b7bddbceda793098f2fed3a249fb02911f4a46c5d9a2e6c77079fa7e40b2ad"
+            "url": "https://nuwen.net/files/mingw/components-20.0.7z",
+            "hash": "561d873b7f95dbb39a34b7ab00050dc6028808310a847721a8aea5e5b0bff1c9"
         }
     },
-    "extract_dir": "components-18.0",
+    "extract_dir": "components-20.0",
     "pre_install": [
         "Expand-7ZipArchive \"$dir\\gdb-*.7z\" \"$dir\"",
         "Get-ChildItem \"$dir\\*.7z\" | Remove-Item -Recurse -Force"

@@ -1,15 +1,14 @@
 {
-    "version": "0.5.4",
+    "version": "0.11.4",
     "description": "fast, encrypted, and deduplicated backups powered by Rust",
     "homepage": "https://rustic.cli.rs",
     "license": "MIT|Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/rustic-rs/rustic/releases/download/v0.5.4/rustic-v0.5.4-x86_64-pc-windows-msvc.tar.gz",
-            "hash": "4a5074a2937dcf1b8bcc1bdeebdb9d10364062b00e0c6475b4e0d8859ebb49d2"
+            "url": "https://github.com/rustic-rs/rustic/releases/download/v0.11.4/rustic-v0.11.4-x86_64-pc-windows-msvc.tar.gz",
+            "hash": "aa3586c2646da30965e099393c739a32526c27314cfaaf97af7f65aab1ec230a"
         }
     },
-    "pre_install": "Rename-Item \"$dir\\rustic\" 'rustic.exe' -ErrorAction SilentlyContinue # delete this when upstream fixes it",
     "env_set": {
         "RUSTIC_HOME": "$dir"
     },

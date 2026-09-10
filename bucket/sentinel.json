@@ -1,16 +1,16 @@
 {
-    "version": "0.24.0",
+    "version": "0.41.0",
     "description": "An embeddable policy as code framework to enable fine-grained, logic-based policy decisions.",
     "homepage": "https://www.hashicorp.com/sentinel",
     "license": "Proprietary",
     "architecture": {
         "64bit": {
-            "url": "https://releases.hashicorp.com/sentinel/0.24.0/sentinel_0.24.0_windows_amd64.zip",
-            "hash": "17c78a8384292af5631cc37b55f16070638b0e93b32a7bf2c1f74df7db49203e"
+            "url": "https://releases.hashicorp.com/sentinel/0.41.0/sentinel_0.41.0_windows_amd64.zip",
+            "hash": "34d4cafe6266cc968a1b5678d025d1a0a27fd266789b78d842008bb3ee9a508e"
         },
         "32bit": {
-            "url": "https://releases.hashicorp.com/sentinel/0.24.0/sentinel_0.24.0_windows_386.zip",
-            "hash": "5014edfba5174389e5a8b0b7cbd551fd4f747d0304cf9bf26c47c8eb47b0b80f"
+            "url": "https://releases.hashicorp.com/sentinel/0.41.0/sentinel_0.41.0_windows_386.zip",
+            "hash": "d5a9f3ed02c6e1ad2cd15d71b4ff4a7c1b127f07da343a871574e3ec2483f498"
         }
     },
     "bin": "sentinel.exe",

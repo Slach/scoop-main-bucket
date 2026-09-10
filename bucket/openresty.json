@@ -1,5 +1,5 @@
 {
-    "version": "1.21.4.3",
+    "version": "1.29.2.1",
     "description": "Dynamic web platform based on NGINX and LuaJIT.",
     "homepage": "https://openresty.org",
     "license": "BSD-2-Clause",
@@ -13,14 +13,14 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://openresty.org/download/openresty-1.21.4.3-win64.zip",
-            "hash": "9f2799c703fc8141a6331b408e10b6849fa7e83c2144950e909e3d6a9de83978",
-            "extract_dir": "openresty-1.21.4.3-win64"
+            "url": "https://openresty.org/download/openresty-1.29.2.1-win64.zip",
+            "hash": "44586213135d21aa2c48eec533b4c207bdfecda53bd9b6d5563f1aac544aca4b",
+            "extract_dir": "openresty-1.29.2.1-win64"
         },
         "32bit": {
-            "url": "https://openresty.org/download/openresty-1.21.4.3-win32.zip",
-            "hash": "36b962754a72a3d5a9b15f7888d76806d36afe6f305cfadddfc1f57e6bfee844",
-            "extract_dir": "openresty-1.21.4.3-win32"
+            "url": "https://openresty.org/download/openresty-1.29.2.1-win32.zip",
+            "hash": "2be373fc3bd5402fe0ec526d481a0cce7f3f9291f6998c0aa62411fb886004cb",
+            "extract_dir": "openresty-1.29.2.1-win32"
         }
     },
     "bin": [
